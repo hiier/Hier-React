@@ -1,0 +1,143 @@
+__d(function (global, require, module, exports, _dependencyMap) {
+  Object.defineProperty(exports, "__esModule", {
+    value: true
+  });
+
+  var _react2 = require(_dependencyMap[0], "react");
+
+  var _react3 = _interopRequireDefault(_react2);
+
+  var _index = require(_dependencyMap[1], "./node_modules/react-transform-hmr/lib/index.js");
+
+  var _index2 = _interopRequireDefault(_index);
+
+  var _jsxFileName = "/Users/renky/Desktop/hier_react/Hier/App.js";
+
+  var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+  var _reactNative = require(_dependencyMap[2], "react-native");
+
+  function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+  function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+  function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+  function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+  var _components = {
+    Greeting: {
+      displayName: "Greeting"
+    },
+    HelloWorldApp: {
+      displayName: "HelloWorldApp"
+    }
+  };
+
+  var _node_modulesReactTransformHmrLibIndexJs2 = (0, _index2.default)({
+    filename: "/Users/renky/Desktop/hier_react/Hier/App.js",
+    components: _components,
+    locals: [module],
+    imports: [_react3.default]
+  });
+
+  function _wrapComponent(id) {
+    return function (Component) {
+      return _node_modulesReactTransformHmrLibIndexJs2(Component, id);
+    };
+  }
+
+  var Greeting = _wrapComponent("Greeting")(function (_Component) {
+    _inherits(Greeting, _Component);
+
+    function Greeting() {
+      _classCallCheck(this, Greeting);
+
+      return _possibleConstructorReturn(this, (Greeting.__proto__ || Object.getPrototypeOf(Greeting)).apply(this, arguments));
+    }
+
+    _createClass(Greeting, [{
+      key: "render",
+      value: function render() {
+        return _react3.default.createElement(
+          _reactNative.Text,
+          {
+            __source: {
+              fileName: _jsxFileName,
+              lineNumber: 7
+            }
+          },
+          "Hello ",
+          this.props.name,
+          "!"
+        );
+      }
+    }]);
+
+    return Greeting;
+  }(_react2.Component));
+
+  var HelloWorldApp = _wrapComponent("HelloWorldApp")(function (_Component2) {
+    _inherits(HelloWorldApp, _Component2);
+
+    function HelloWorldApp() {
+      _classCallCheck(this, HelloWorldApp);
+
+      return _possibleConstructorReturn(this, (HelloWorldApp.__proto__ || Object.getPrototypeOf(HelloWorldApp)).apply(this, arguments));
+    }
+
+    _createClass(HelloWorldApp, [{
+      key: "render",
+      value: function render() {
+        return _react3.default.createElement(
+          _reactNative.View,
+          {
+            style: {
+              alignItems: 'center'
+            },
+            __source: {
+              fileName: _jsxFileName,
+              lineNumber: 15
+            }
+          },
+          _react3.default.createElement(Greeting, {
+            name: "Hier",
+            __source: {
+              fileName: _jsxFileName,
+              lineNumber: 16
+            }
+          }),
+          _react3.default.createElement(Greeting, {
+            name: "Hier",
+            __source: {
+              fileName: _jsxFileName,
+              lineNumber: 17
+            }
+          }),
+          _react3.default.createElement(Greeting, {
+            name: "Hier",
+            __source: {
+              fileName: _jsxFileName,
+              lineNumber: 18
+            }
+          }),
+          _react3.default.createElement(Greeting, {
+            name: "Hier",
+            __source: {
+              fileName: _jsxFileName,
+              lineNumber: 19
+            }
+          })
+        );
+      }
+    }]);
+
+    return HelloWorldApp;
+  }(_react2.Component));
+
+  exports.default = HelloWorldApp;
+
+  _reactNative.AppRegistry.registerComponent('Hier', function () {
+    return HelloWorldApp;
+  });
+});
